@@ -21,7 +21,7 @@ jobs:
       - name: Rewrite base href
         uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
         with:
-          html_path: ${{ env.PUBLISH_DIR }}/index.html
+          html_path: release/wwwroot/index.html
           base_href: /BlazorGitHubPagesDemo/
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
